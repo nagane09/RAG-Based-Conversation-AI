@@ -1,0 +1,8 @@
+data/
+vector_store/
+models/
+*.bin
+*.pt
+*.safetensors
+*.wav
+*.crdownload
