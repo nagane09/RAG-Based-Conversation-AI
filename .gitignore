@@ -1,5 +1,5 @@
 
-vector_store/
+
 models/
 *.bin
 *.pt
