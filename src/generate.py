@@ -3,19 +3,15 @@ import torch
 
 MODEL_PATH = "models/TinyLlama-1.1B-Chat-v1.0"
 
-# Load tokenizer
 tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
 
-# Load model ON CPU (NO device_map)
 model = AutoModelForCausalLM.from_pretrained(
     MODEL_PATH,
     torch_dtype=torch.float32
 )
 
-# Explicitly move to CPU
 model.to("cpu")
 
-# Create pipeline (force CPU with device=-1)
 generator = pipeline(
     "text-generation",
     model=model,
