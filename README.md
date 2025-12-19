@@ -15,37 +15,6 @@ This project is an **offline Retrieval-Augmented Generation (RAG) AI system** bu
 
 ---
 
-## **System Architecture**
-
-PDF Documents
-│
-▼
-Text Extraction (PyPDF)
-│
-▼
-Text Chunking
-│
-▼
-Embedding Generation (SentenceTransformer)
-│
-▼
-FAISS Vector Store
-│
-▼
-User Query
-│
-▼
-Relevant Chunk Retrieval
-│
-▼
-TinyLlama Answer Generation
-│
-▼
-Text Output + Speech Output
-
-
----
-
 ## **Technologies Used**
 
 * Python
